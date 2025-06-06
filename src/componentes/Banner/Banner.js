@@ -1,6 +1,6 @@
 import './Banner.css';
 
-function Banner() {
+export const Banner = () => {
     //parece html, mas não é. É JSX, aqui o react faz o append no DOM. Transforma em elementos no DOM. É igual o document.createELemente(imh)
     return (
         <header className='banner'>
@@ -8,5 +8,4 @@ function Banner() {
         </header>
     )
 };
-
-export default Banner;
+ 
