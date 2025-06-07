@@ -1,9 +1,9 @@
 import "./CampoTexto.css";
-const CampoTexto = () => { //componentes react sempre começam com letra maiscula
+const CampoTexto = (props) => { //componentes react sempre começam com letra maiscula
     return(
         <div className="campo-texto">
-            <label>Nome</label>
-            <input placeholder="Digite seu nome"/>
+            <label>{props.label}</label>
+            <input placeholder={props.placeholder}/>
         </div>
     )
 };
