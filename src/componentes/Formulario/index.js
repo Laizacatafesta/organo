@@ -15,9 +15,14 @@ const Formulario = () => {
         ' Inovação e Gestão'
     ]
 
+    const aoSalvar = (evento) => { //faz carregar a pagina sem atualizar e voltar ao inicio quando clica no botão
+        evento.preventDefault()
+        console.log("Form foi submetido")
+    }
+
     return (
         <section className='formulario'>
-            <form>
+            <form onSubmit={aoSalvar}>
                 <h2>Preencha o card com os dados do colaborador</h2>
                 <CampoTexto label="Nome" placeholder="Digite seu nome" />
                 <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
