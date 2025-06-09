@@ -24,7 +24,7 @@ const Formulario = () => {
         <section className='formulario'>
             <form onSubmit={aoSalvar}>
                 <h2>Preencha o card com os dados do colaborador</h2>
-                <CampoTexto label="Nome" placeholder="Digite seu nome" />
+                <CampoTexto obrigatorio ={true} label="Nome" placeholder="Digite seu nome" />
                 <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
                 <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
                 <ListaSuspensa label="Time" itens={times}/>
