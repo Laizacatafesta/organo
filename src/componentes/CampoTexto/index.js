@@ -10,7 +10,7 @@ const CampoTexto = (props) => { //componentes react sempre começam com letra ma
     return (
         <div className="campo-texto">
             <label>{props.label}</label>
-            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder} />
+            <input value={props.value} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder} />
         </div>
     )
 };
