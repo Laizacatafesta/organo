@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./CampoTexto.css";
 const CampoTexto = (props) => { //componentes react sempre começam com letra maiscula
 
